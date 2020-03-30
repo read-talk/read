@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/read.jpg" />
+    <title>read and talk</title>
+    <meta name="keywords" content="阅读英语,读书,讨论,聊天,评论,段落评论,英语,翻译">
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/read.js"></script>
+</head>
+<body>
+    <div class="page-home text-center">
+        <div class="hero">
+            <div class="hero-body">
+                <h1>阅读英语</h1>
+                <p>
+                    
+                    <a target="_blank" href="https://github.com/read-talk/read">Read Talk</a> 是一个可以在线阅读英文网站的平台 提供 <b>单词注解</b> 、<b>段落评论</b> 等功能。
+                
+                </p>
+                <form class="form-autocomplete col-xs-12 col-7 col-mr-auto col-ml-auto" action="/search">
+                    <div class="input-group">
+                    <div class="form-autocomplete-input form-input">
+                        <input id="import-search" class="form-input" name="q" placeholder="请输入英文网站网址" autocomplete="off" autofocus="">
+                        <input type="hidden" name="auto_redirect" value="true">
+                    </div>
+                    <button id="search-url" class="btn input-group-btn"><i class="icon icon-search"></i><div class="loading d-hide p-2"></div></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
