@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/custer-go/read/handler"
+	"github.com/read-talk/read/handler"
 )
 
 func main() {
@@ -13,6 +13,6 @@ func main() {
 		http.FileServer(http.Dir("../../static"))))
 	mux.HandleFunc("/", handler.HomeHandler)
 	mux.HandleFunc("/search", handler.SearchHandler)
-	fmt.Printf("服务启动中，开始监听端口: [%s]... \n", ":2020")
+	fmt.Printf("服务启动中，开始监听端口 [%s]... \n", ":2020")
 	http.ListenAndServe(":2020", mux)
 }
